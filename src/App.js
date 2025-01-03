@@ -8,16 +8,21 @@ import RoomDetails from './pages/RoomDetails';
 // react router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/room/:id',
+      element: <RoomDetails />,
+    },
+  ],
   {
-    path: '/',
-    element: <Home />,
+    basename: '/react-hotel-adina', // <-- добавляем нужный подкаталог
   },
-  {
-    path: '/room/:id',
-    element: <RoomDetails />,
-  },
-]);
+);
 
 const App = () => {
   return (
