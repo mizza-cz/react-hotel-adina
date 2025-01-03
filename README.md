@@ -1,1 +1,1 @@
-# hotel-starter
+# Hotel and Spa Adina
